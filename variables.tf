@@ -104,7 +104,7 @@ variable "instances" {
   type = object({
     allow_major_version_upgrade = optional(bool, false)
     auto_minor_version_upgrade  = optional(bool, true)
-    ca_cert_identifier          = optional(string, null)
+    ca_cert_identifier          = optional(string, "rds-ca-rsa4096-g1")
     character_set_name          = optional(string, null)
     create_instance             = optional(bool, true)
     db_name                     = optional(string, null)
